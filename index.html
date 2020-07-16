@@ -10,53 +10,54 @@
             <button class="tab-switch-btn active" data-target="#dialer">Dialer</button>
             <button class="tab-switch-btn" data-target="#contacts">Contact List</button>
             <button class="tab-switch-btn" data-target="#add-contact">Add Contact</button>
+            <button class="tab-switch-btn" data-target="#gestures">Gestures</button>
         </div>
         <div class="tabs">
             <div class="tab" id="dialer">
                 <h3>Dialer</h3>
-                <input type="text">
+                <input id="dialer-number" type="text" readonly="readonly">
                 <div class="pure-g">
                     <div class="pure-u-1-3">
-                        <div class="dialer-cell"><button class="dialer-btn">1</button></div>
+                        <div class="dialer-cell"><button class="dialer-btn number-btn" value="1">1</button></div>
                     </div>
                     <div class="pure-u-1-3">
-                        <div class="dialer-cell"><button class="dialer-btn">2</button></div>
+                        <div class="dialer-cell"><button class="dialer-btn number-btn" value="2">2</button></div>
                     </div>
                     <div class="pure-u-1-3">
-                        <div class="dialer-cell"><button class="dialer-btn">3</button></div>
+                        <div class="dialer-cell"><button class="dialer-btn number-btn" value="3">3</button></div>
                     </div>
                     <div class="pure-u-1-3">
-                        <div class="dialer-cell"><button class="dialer-btn">4</button></div>
+                        <div class="dialer-cell"><button class="dialer-btn number-btn" value="4">4</button></div>
                     </div>
                     <div class="pure-u-1-3">
-                        <div class="dialer-cell"><button class="dialer-btn">5</button></div>
+                        <div class="dialer-cell"><button class="dialer-btn number-btn" value="5">5</button></div>
                     </div>
                     <div class="pure-u-1-3">
-                        <div class="dialer-cell"><button class="dialer-btn">6</button></div>
+                        <div class="dialer-cell"><button class="dialer-btn number-btn" value="6">6</button></div>
                     </div>
                     <div class="pure-u-1-3">
-                        <div class="dialer-cell"><button class="dialer-btn">7</button></div>
+                        <div class="dialer-cell"><button class="dialer-btn number-btn" value="7">7</button></div>
                     </div>
                     <div class="pure-u-1-3">
-                        <div class="dialer-cell"><button class="dialer-btn">8</button></div>
+                        <div class="dialer-cell"><button class="dialer-btn number-btn" value="8">8</button></div>
                     </div>
                     <div class="pure-u-1-3">
-                        <div class="dialer-cell"><button class="dialer-btn">9</button></div>
+                        <div class="dialer-cell"><button class="dialer-btn number-btn" value="9">9</button></div>
                     </div>
                     <div class="pure-u-1-3">
-                        <div class="dialer-cell"><button class="dialer-btn">*</button></div>
+                        <div class="dialer-cell"><button class="dialer-btn number-btn" value="*">*</button></div>
                     </div>
                     <div class="pure-u-1-3">
-                        <div class="dialer-cell"><button class="dialer-btn">0</button></div>
+                        <div class="dialer-cell"><button class="dialer-btn number-btn" value="0">0</button></div>
                     </div>
                     <div class="pure-u-1-3">
-                        <div class="dialer-cell"><button class="dialer-btn">#</button></div>
+                        <div class="dialer-cell"><button class="dialer-btn number-btn" value="#">#</button></div>
                     </div>
                     <div class="pure-u-1-2">
-                        <div class="dialer-cell"><button class="dialer-btn">Dial</button></div>
+                        <div class="dialer-cell"><button id="dial-btn" class="dialer-btn">Dial</button></div>
                     </div>
                     <div class="pure-u-1-2">
-                        <div class="dialer-cell"><button class="dialer-btn">Clear</button></div>
+                        <div class="dialer-cell"><button id="clear-btn" class="dialer-btn">Clear</button></div>
                     </div>
                 </div>
             </div>
@@ -83,6 +84,11 @@
                         <button type="submit" class="pure-button">Create contact</button>
                     </fieldset>
                 </form>
+            </div>
+            <div class="tab" id="gestures">
+                <h3>Gestures</h3>
+                <input id="gesture-output" type="text">
+                <div id="gesture-area"></div>
             </div>
         </div>
         
