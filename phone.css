@@ -46,3 +46,10 @@
 .contact-list li:hover {
     background-color: #fafafa;
 }
+
+#gesture-area {
+    background-color: #c2e5ed;
+    height: 300px;
+    width: 300px;
+    margin-top: 10px;
+}
