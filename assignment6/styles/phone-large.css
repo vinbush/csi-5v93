@@ -1,0 +1,109 @@
+/* * {
+    font-size: 125%;
+} */
+
+body, div {
+    background-color: black;
+}
+
+p, h1, h2, h3, h4, h5, h6, button, label, input, li, button.pure-button {
+    font-size: 200%;
+    color: yellow;
+}
+
+.pure-form-message {
+    font-size: 150%;
+    color: yellow;
+}
+
+form.pure-form input {
+    color: yellow;
+    border-color: yellow !important;
+    background-color: black;    
+}
+
+button, button.pure-button {
+    background-color: black;
+    border: 1px solid yellow;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover, button.pure-button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+input {
+    background-color: black;
+    border: 1px solid yellow;
+}
+
+#tab-menu {
+    background-color: #808080;
+    padding: 10px 5px 0px 5px;
+}
+
+.tab-switch-btn {
+    padding: 5px 10px;
+    border-radius: 10px 10px 0 0;
+    background-color: yellow;
+    color: black;
+    border-color: black;
+    border-bottom: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.tab-switch-btn.active {
+    background-color: black;
+    color: yellow;
+    border-color: yellow;
+}
+
+.tabs {
+    padding: 15px;
+    max-width: 325px;
+}
+
+.dialer-btn {
+    width:100%;
+    font-size: 300%;
+}
+
+.dialer-cell {
+    padding: 5px;
+}
+
+.contact-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-list li {
+    background-color: black;
+    border: 1px solid yellow;
+    padding: 5px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+
+.contact-list li:hover {
+    background-color: yellow;
+    color: black;
+}
+
+#gesture-area {
+    background-color: #c2e5ed;
+    height: 300px;
+    width: 300px;
+    margin-top: 10px;
+}
+
+a.contrast-switcher {
+    float: right;
+    color: yellow;
+    font-size: 150%;
+    margin-right: 10px;
+}

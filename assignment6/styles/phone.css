@@ -1,0 +1,60 @@
+#tab-menu {
+    background-color: #808080;
+    padding: 10px 5px 0px 5px;
+}
+
+.tab-switch-btn {
+    padding: 5px 10px;
+    border-radius: 10px 10px 0 0;
+    background-color: #bbbbbb;
+    border-bottom: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.tab-switch-btn.active {
+    background-color: #ffffff;
+}
+
+.tabs {
+    padding: 15px;
+    max-width: 150px;
+}
+
+.dialer-btn {
+    width:100%;
+}
+
+.dialer-cell {
+    padding: 5px;
+}
+
+.contact-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-list li {
+    background-color: #eeeeee;
+    border: 1px solid #bbbbbb;
+    padding: 5px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+
+.contact-list li:hover {
+    background-color: #fafafa;
+}
+
+#gesture-area {
+    background-color: #c2e5ed;
+    height: 300px;
+    width: 300px;
+    margin-top: 10px;
+}
+
+a.contrast-switcher {
+    float: right;
+    margin-right: 10px;
+}
