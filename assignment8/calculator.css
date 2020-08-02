@@ -1,0 +1,48 @@
+body {
+	font-family: helvetica, arial, sans-serif; margin: 16px;
+}
+#calculator { background: #fafafa; padding: 16px; width: 600px; text-align: center; border: 3px solid black}
+
+#calculator h1 { font-size: large; font-family: helvetica, arial, sans-serif; }
+
+.calculator_row { 
+	margin-bottom: 8px;
+	/* Transparent border so the rows don't jiggle around when adding a colorful border */
+	border: 3px solid transparent;
+	border-radius: 5px;
+    box-shadow: 0 0 10px transparent;
+}
+
+.calculator_row button {
+	/* default styling stuff */
+	font-size: xx-large; padding: 10px; width: 100px; background: #eee; border: 3px solid black; font-family: ocr-a, consolas, monospaced; font-weight: bold; margin: 5px;
+}
+
+.calculator_row.scanning, .calculator_row button.scanning { 
+	border: 3px solid #ff9100;
+	border-radius: 5px;
+    box-shadow: 0 0 10px #ff9b19;
+}
+
+.calculator_row.scan-select, .calculator_row button.scan-select { 
+	border: 3px solid #00df00;
+	border-radius: 5px;
+    box-shadow: 0 0 10px #1adf1a;
+}
+
+button.meta { background: red; color: white;}
+button.function { background: darkblue; color: white;}
+button:active { background: #ff9100; color: black;}
+
+button.cursor { background: yellow; color: black;}
+
+#number_input { font-size: xx-large; font-family: ocr-a, consolas, monospaced; background: azure; padding: 8px; text-align: right; width: 416px; font-weight: bold; border: 2px solid black; height: 50px; }
+
+label {
+	display: inline-block; width: 50px; font-weight: bold;
+}
+
+#settings {
+	border: 1px solid black;
+	padding: 10px;
+}
