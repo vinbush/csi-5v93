@@ -13,35 +13,68 @@
 				<input id="number_input">
 			</div>
 			<div id="scanning-rows">
-				<div class="calculator_row scanning-row scanning" id="row1">
-					<button id="button0" class="calcButton scanning-button">0</button>
-					<button id="button1" class="calcButton scanning-button">1</button>
-					<button id="button2" class="calcButton scanning-button">2</button>
-					<button id="button3" class="calcButton scanning-button">3</button>
+				<div class="calculator_row scanning-row scanning">
+					<button id="button7" class="calcButton scanning-button">7</button>
+					<button id="button8" class="calcButton scanning-button">8</button>
+					<button id="button9" class="calcButton scanning-button">9</button>
+					<button id="buttonMultiply" class="calcButton scanning-button function">/</button>
+					
 				</div>
-				<div class="calculator_row scanning-row" id="row2">
+				<div class="calculator_row scanning-row">
 					<button id="button4" class="calcButton scanning-button">4</button>
 					<button id="button5" class="calcButton scanning-button">5</button>
 					<button id="button6" class="calcButton scanning-button">6</button>
-					<button id="button7" class="calcButton scanning-button">7</button>
+					<button id="buttonDivide" class="calcButton scanning-button function">*</button>
 				</div>
-				<div class="calculator_row scanning-row" id="row3">
-					<button id="button8" class="calcButton scanning-button">8</button>
-					<button id="button9" class="calcButton scanning-button">9</button>
+				<div class="calculator_row scanning-row">
+					<button id="button1" class="calcButton scanning-button">1</button>
+					<button id="button2" class="calcButton scanning-button">2</button>
+					<button id="button3" class="calcButton scanning-button">3</button>
+					<button id="buttonSubtract" class="calcButton scanning-button function">-</button>
+					
+				</div>
+				<div class="calculator_row scanning-row">
+					<button id="button0" class="calcButton scanning-button">0</button>
 					<button id="buttonClear" class="calcButton scanning-button meta">C</button>
 					<button id="buttonEquals" class="calcButton scanning-button meta">=</button>
-				</div>
-				<div class="calculator_row scanning-row" id="row4">
 					<button id="buttonAdd" class="calcButton scanning-button function">+</button>
-					<button id="buttonSubtract" class="calcButton scanning-button function">-</button>
-					<button id="buttonDivide" class="calcButton scanning-button function">*</button>
-					<button id="buttonMultiply" class="calcButton scanning-button function">/</button>
 				</div>
 			</div>
 		</div>
 		<div id="comments">
 			<h2>Single-switch auto-scanning calculator</h2>
-			<p>Press Enter to simulate the switch being pressed. Scan speed is 750 ms (3/4 of a second)</p>
+			<p>Press Enter to simulate the switch being pressed. Scan speed is 500 ms (1/2 second). <a href="../assignment8_alt/index.html">View alternate layout.</a></p>
+			<h2>Trial: Alternate calculator layout</h2>
+			<p>Hypothesis: An alternate calculator layout (see link above) that separates the numbers from the operations will improve single-switch performance.</p>
+			<p>Rationale: The traditional calculator layout is not designed for row/col scanning, and it mixes numbers and operations in the same rows. A layout that separates out the numbers and operations may improve performance.</p>
+			<h3>Test procedure</h3>
+			<p>The following series of equations were input:</p>
+			<ol>
+				<li>936 / 18 * 271 + 2961</li>
+				<li>299 / 13 * 12 - 8294</li>
+				<li>297 / 11 * 967 * 95</li>
+				<li>246 * 64 + 9526 + 453</li>
+				<li>743 * 74 - 14 - 2230</li>
+			</ol>
+			<p>Questions generated with the help of <a href="https://mathsbot.com/questionGenerator">mathsbot.com</a>, and rearranged to simplify order of operations.</p>
+			<p>Each keyboard layout was used to input the five equations three times each. The total time to complete the set and the number of errors were recorded. I considered an error to be when I pressed an incorrect number or operation (so pressing the wrong row and letting it run to the end and go back to row scanning was not considered an error).</p>
+			<h3>Results</h3>
+			<p>Original Layout:</p>
+			<ol>
+				<li>4:40, 0 mistakes</li> 280
+				<li>4:40, 1 mistake</li> 280
+				<li>5:03, 1 mistake</li> 303
+			</ol>
+			<p>Alternate Layout:</p>
+			<ol>
+				<li>4:48, 0 mistakes</li> 288
+				<li>5:14, 1 mistake</li> 314
+				<li>4:20, 0 mistakes</li> 260
+			</ol>
+			<p>Mean time for original: 287.67. Mean mistakes for original: .67</p>
+			<p>Mean time for alternate: 287.33. Mean mistakes for alternate: .33</p>
+			<h3>Discussion</h3>
+			<p>There doesn't appear to be any significance between the two layouts. Anecdotally, I didn't really notice any difference between the two. While using the alternate layout, I thought it was nice to have the operations all in one place so I always knew when an alternate was coming up, but it also increased the time it took to circle back to the beginning of the numbers, so it felt like a wash.</p>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
 		<script src="calculator.js" type="text/javascript"></script>
